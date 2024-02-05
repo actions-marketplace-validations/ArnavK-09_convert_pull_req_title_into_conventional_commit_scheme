@@ -1,11 +1,27 @@
-name: 'Hello World JS Action'
-description: 'Greet someone and record the time'
+name: Convert Pull Req Title Into Conventional Commit Scheme
+description: "Greet someone and record the time"
 
 inputs:
   gemini_api_key:
-    description: 'Your Google Gemini API Key...'
+    description: "Your Google Gemini API Key..."
+    required: true
+  include_emoji:
+    description: "If to add emoji in starting of commit message..."
+    required: false
+    default: true
+  owner:
+    description: "The owner of the repository..."
+    required: true
+  repo:
+    description: "The name of the repository..."
+    required: true
+  pr_number:
+    description: "The number of the pull request..."
+    required: true
+  token:
+    description: "The token to use to access the GitHub API..."
     required: true
 
 runs:
-  using: 'node20'
-  main: 'index.js'
+  using: "node20"
+  main: "index.js"

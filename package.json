@@ -1,12 +1,21 @@
 {
-  "name": "acttest",
-  "version": "1.0.0",
+  "name": "convert_pull_req_title_into_conventional_commit_scheme",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "github-action",
+    "commitconventions",
+    "gemini-pro"
+  ],
   "author": "ArnavK-09",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@google/generative-ai": "^0.2.0"
+  }
 }
