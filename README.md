@@ -52,7 +52,7 @@ jobs:
 
 > [!TIP]
 >
-> ##### 🥓 Example Usage
+> ##### 🥓 Example Usage **[#12](https://github.com/ArnavK-09/convert_pull_req_title_into_conventional_commit_scheme/pull/12)**
 > To use this action, create a new pull request with a fuzzy title and good description.
 > The action will automatically convert the pull request title into a conventional commit message and patch it to the pull request.
 
