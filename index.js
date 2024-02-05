@@ -129,7 +129,7 @@ const initAction = async () => {
     /**
      * If any error, inform workflow
      */
-    core.setFailed(error.message);
+    core.setFailed(error);
   }
 };
 
