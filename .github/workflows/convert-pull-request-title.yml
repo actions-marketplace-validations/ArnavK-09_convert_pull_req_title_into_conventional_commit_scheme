@@ -2,8 +2,7 @@ name: Convert Pull Req Title Into Conventional Commit Scheme
 
 on:
   pull_request:
-    types:
-      - opened
+    types: ['opened']
 
 jobs:
   convert:
@@ -16,8 +15,4 @@ jobs:
         uses: ArnavK-09/convert_pull_req_title_into_conventional_commit_scheme@v0.0.3-testing
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
-          owner: ${{ github.event.repository_owner }}
-          repo: ${{ github.event.repository }}
-          pr_number: ${{ github.event.pull_request.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          include_emoji: true
