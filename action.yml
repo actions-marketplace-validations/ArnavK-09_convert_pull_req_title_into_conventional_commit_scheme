@@ -1,5 +1,5 @@
 name: Convert Pull Req Title Into Conventional Commit Scheme
-description: "Greet someone and record the time"
+description: By utilizing this action, users can automatically convert new pull request titles into the conventional commits format
 
 inputs:
   gemini_api_key:
