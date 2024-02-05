@@ -17,7 +17,7 @@
 - Click on the "Set up a workflow" button.
 - Choose the repository where you want to use the action.
 - Create a new workflow file (e.g., `.github/workflows/convert-pull-request-title.yml`).
-- Add the following code to the workflow file:
+- **Add the following code to the workflow file:**
 
 ```yaml
 name: Convert Pull Req Title Into Conventional Commit Scheme!
