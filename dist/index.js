@@ -31763,13 +31763,21 @@ const initAction = async () => {
      * Fetching inputs for actions
      **/
     const GEMINI_API_KEY = core.getInput("gemini_api_key", { required: true });
-    const owner = core.getInput("owner", { required: true });
-    const repo = core.getInput("repo", { required: true });
-    const pull_number = core.getInput("pr_number", { required: true });
     const token = core.getInput("token", { required: true });
+    const owner = github.context.repository.split("/")[0];
+    const repo = github.context.repository.split("/")[1];
+    const pull_number = github.context.payload.pull_request.number;
     const includeEmoji = core.getBooleanInput("include_emoji", {
       required: false,
     });
+
+    /**
+     * Logging details
+     */
+    core.debug(`Github Payload: ${github.context.payload}`);
+    core.notice(
+      `Repo Owner: ${owner}\nRepo Name: ${repo}\nPull Request Number: ${pull_number}\nEmojis Included: ${includeEmoji}`,
+    );
 
     /**
      * Inform user about emoji
@@ -31843,7 +31851,7 @@ const initAction = async () => {
     /**
      * If any error, inform workflow
      */
-    core.setFailed(error.message);
+    core.setFailed(error);
   }
 };
 

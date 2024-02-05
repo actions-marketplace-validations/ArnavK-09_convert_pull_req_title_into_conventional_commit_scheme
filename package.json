@@ -1,10 +1,10 @@
 {
   "name": "convert_pull_req_title_into_conventional_commit_scheme",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "By utilizing this action, users can automatically convert new pull request titles into the conventional commits format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx ncc build index.js"
   },
   "keywords": [
     "github-action",
