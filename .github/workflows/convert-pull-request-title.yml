@@ -14,13 +14,10 @@ jobs:
 
       - name: Convert Pull Request Title into Conventional Commit Scheme
         uses: ArnavK-09/convert_pull_req_title_into_conventional_commit_scheme@v0.0.2-testing
-        env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         with:
-          gemini_api_key: $GEMINI_API_KEY
-          owner: ${{ github.repository_owner }}
-          repo: ${{ github.repository }}
+          gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
+          owner: ${{ github.event.repository_owner }}
+          repo: ${{ github.event.repository }}
           pr_number: ${{ github.event.pull_request.number }}
-          token: $GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }}
           include_emoji: true
