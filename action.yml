@@ -1,4 +1,4 @@
-name: Convert Pull Req Title Into Conventional Commit Scheme
+name: Convert Pull Req Title Into Conventional Commit Scheme!
 description: By utilizing this action, users can automatically convert new pull request titles into the conventional commits format
 author: ArnavK-09
 

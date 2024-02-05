@@ -1,5 +1,5 @@
-## 🌟 
-# convert_pull_req_title_into_conventional_commit_scheme
+## 🌟🌟🌟 
+# **convert_pull_req_title_into_conventional_commit_scheme**
 
 > [!NOTE]  
 > The [**`convert_pull_req_title_into_conventional_commit_scheme`**](https://github.com/marketplace/actions/convert-pull-request-title-into-conventional-commit-scheme) project is a public **GitHub Action** available in the GitHub Marketplace. By utilizing this action, users can automatically **convert new pull request titles into the conventional commits format** as defined by [conventionalcommits.org](https://www.conventionalcommits.org/).

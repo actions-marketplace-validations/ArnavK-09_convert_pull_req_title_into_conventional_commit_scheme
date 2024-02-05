@@ -31728,7 +31728,7 @@ const prompt = (title, description, include_emoji = false) => {
   return `
     # Give me conventional commit message following www.conventionalcommits.org for pull request with title and description mentioned above. Only in single Line.
     ## ${include_emoji ? "ALSO INCLUDE appropriate EMOJI IN STARTING OF COMMIT message" : ""}
-    
+
     # Documentation for conventionalcommits.org:
     The Conventional Commits specification is a lightweight convention on top of commit messages. It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages.
     
@@ -31826,7 +31826,6 @@ const initAction = async () => {
     const result = await gemini.generateContent(
       prompt(prTitle, prDescription, includeEmoji),
     );
-    core.notice(`Prompt:- ${prompt(prTitle, prDescription, includeEmoji)}`)
 
     /**
      * Manipulating response into string
@@ -31857,7 +31856,6 @@ const initAction = async () => {
 };
 
 // Call the action
-core.debug(`Github Payload: ${github.context}`);
 initAction();
 
 })();

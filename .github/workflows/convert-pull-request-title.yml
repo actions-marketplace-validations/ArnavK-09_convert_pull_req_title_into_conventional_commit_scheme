@@ -1,4 +1,4 @@
-name: Convert Pull Req Title Into Conventional Commit Scheme
+name: Convert Pull Req Title Into Conventional Commit Scheme!
 
 on:
   pull_request:
