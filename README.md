@@ -3,7 +3,7 @@
 > [!NOTE]  
 > The [**`convert_pull_req_title_into_conventional_commit_scheme`**](https://github.com/ArnavK-09/convert_pull_req_title_into_conventional_commit_scheme) project is a public **GitHub Action** available in the GitHub Marketplace. By utilizing this action, users can automatically **convert new pull request titles into the conventional commits format** as defined by [conventionalcommits.org](https://www.conventionalcommits.org/).
 >
-> This project is powered by the **Google Gemini Pro API**, which enables seamless integration and efficient conversion of pull request titles.
+> This project is powered by the **Google Gemini Pro API**, which enables seamless integration and efficient conversion of pull request titles into conventional format messages.
 
 ---
 
