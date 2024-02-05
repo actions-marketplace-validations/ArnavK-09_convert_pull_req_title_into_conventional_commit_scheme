@@ -31825,6 +31825,7 @@ const initAction = async () => {
     const result = await gemini.generateContent(
       prompt(prTitle, prDescription, includeEmoji),
     );
+    core.notice(`Prompt:- ${prompt(prTitle, prDescription, includeEmoji)}`)
 
     /**
      * Manipulating response into string
