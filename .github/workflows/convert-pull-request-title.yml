@@ -19,5 +19,5 @@ jobs:
           owner: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           pr_number: ${{ github.event.pull_request.number }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PROFILE_TOKEN }}
           include_emoji: true
