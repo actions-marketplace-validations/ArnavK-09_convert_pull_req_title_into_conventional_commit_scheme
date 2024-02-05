@@ -31764,8 +31764,8 @@ const initAction = async () => {
      **/
     const GEMINI_API_KEY = core.getInput("gemini_api_key", { required: true });
     const token = core.getInput("token", { required: true });
-    const owner = github.context.repository.split("/")[0];
-    const repo = github.context.repository.split("/")[1];
+    const owner = github.context.repo.owner;
+    const repo = github.context.repo.repo;
     const pull_number = github.context.payload.pull_request.number;
     const includeEmoji = core.getBooleanInput("include_emoji", {
       required: false,
@@ -31774,7 +31774,6 @@ const initAction = async () => {
     /**
      * Logging details
      */
-    core.debug(`Github Payload: ${github.context.payload}`);
     core.notice(
       `Repo Owner: ${owner}\nRepo Name: ${repo}\nPull Request Number: ${pull_number}\nEmojis Included: ${includeEmoji}`,
     );
@@ -31856,6 +31855,7 @@ const initAction = async () => {
 };
 
 // Call the action
+core.debug(`Github Payload: ${github.context}`);
 initAction();
 
 })();
