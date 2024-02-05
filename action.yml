@@ -3,9 +3,9 @@ description: By utilizing this action, users can automatically convert new pull 
 author: ArnavK-09
 
 branding:
-  icon: 'message-square'
-  color: 'gray-dark'
-  
+  icon: "message-square"
+  color: "gray-dark"
+
 inputs:
   gemini_api_key:
     description: "Your Google Gemini API Key..."
@@ -14,15 +14,6 @@ inputs:
     description: "If to add emoji in starting of commit message..."
     required: false
     default: true
-  owner:
-    description: "The owner of the repository..."
-    required: true
-  repo:
-    description: "The name of the repository..."
-    required: true
-  pr_number:
-    description: "The number of the pull request..."
-    required: true
   token:
     description: "The token to use to access the GitHub API..."
     required: true
